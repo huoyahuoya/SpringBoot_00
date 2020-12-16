@@ -50,7 +50,7 @@ if exist "%HOME%\mavenrc_pre.bat" call "%HOME%\mavenrc_pre.bat"
 if exist "%HOME%\mavenrc_pre.cmd" call "%HOME%\mavenrc_pre.cmd"
 :skipRcPre
 
-@setlocal
+@set
 
 set ERROR_CODE=0
 
