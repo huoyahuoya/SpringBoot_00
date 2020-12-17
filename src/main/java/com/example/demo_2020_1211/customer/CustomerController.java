@@ -8,6 +8,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import java.math.BigDecimal;
+import java.sql.SQLOutput;
 
 @Controller
 @RequestMapping("/")
@@ -29,9 +30,8 @@ public class CustomerController {
         tx.begin();
         //4.完成增删改查操作：保存一个客户到数据库中
         Customer customer = new Customer();
-        customer.setCustId(new BigDecimal(2));
+        customer.setCustId((long)1);
         customer.setCustName("传智播客3");
-        customer.setCustIndustry("教育");
         //保存，
         em.persist(customer); //保存操作
         //5.提交事务

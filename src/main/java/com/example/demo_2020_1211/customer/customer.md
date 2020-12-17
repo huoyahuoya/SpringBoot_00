@@ -2,7 +2,7 @@
 
 ##建表
     CREATE TABLE cst_customer (
-    cust_id number(10) NOT NULL,
+    cust_id number NOT NULL,
     cust_name varchar(32) NOT NULL,
     cust_source varchar(32) DEFAULT NULL,
     cust_industry varchar(32) DEFAULT NULL,
@@ -26,3 +26,6 @@
 
 ##查询
     select * from cst_customer;
+
+##修改数据库数据类型
+    alter table cst_customer modify cust_id NUMBER(30);

@@ -19,10 +19,10 @@
                 驱动，  javax.persistence.jdbc.driver
                 数据库地址   javax.persistence.jdbc.url
             -->
-            <property name="javax.persistence.jdbc.user" value="utest"/>
-            <property name="javax.persistence.jdbc.password" value="123456"/>
+            <property name="javax.persistence.jdbc.user" value="wrz"/>
+            <property name="javax.persistence.jdbc.password" value="wrz"/>
             <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:wrz"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@121.4.96.252:1521:orcl"/>
 
             <!--配置jpa实现方(hibernate)的配置信息
                 显示sql           ：   false|true
@@ -33,7 +33,7 @@
 
             -->
             <property name="hibernate.show_sql" value="true" />
-            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <property name="hibernate.hbm2ddl.auto" value="create" />
         </properties>
     </persistence-unit>
 </persistence>
