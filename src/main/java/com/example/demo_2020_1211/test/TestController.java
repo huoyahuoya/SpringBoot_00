@@ -1,7 +1,6 @@
 package com.example.demo_2020_1211.test;
 
 import com.example.demo_2020_1211.util.JDBCUtil;
-import org.apache.ibatis.jdbc.SQL;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

@@ -58,6 +58,10 @@ public class Book {
         this.description = description;
     }
 
+    public String getReader(){
+        return reader;
+    }
+
     public void setReader(String reader){
         this.reader = reader;
     }

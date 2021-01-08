@@ -7,10 +7,10 @@
                     JTA：分布式事务管理（（不同的表分不到不同的数据库，使用分布式事务管理））
                     RESOURCE_LOCAL：本地事务管理
     -->
-    <persistence-unit name="myJpa" transaction-type="RESOURCE_LOCAL">
+    <persistence-unit name="myJpa">
         <!--jpa的实现方式 -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-
+        <class>com.example.demo_2020_1211.customer.Customer</class>
         <!--可选配置：配置jpa实现方的配置信息-->
         <properties>
             <!-- 数据库信息
@@ -32,7 +32,9 @@
                         none        ：不会创建表
 
             -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
             <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.hbm2ddl.auto" value="create" />
         </properties>
     </persistence-unit>
