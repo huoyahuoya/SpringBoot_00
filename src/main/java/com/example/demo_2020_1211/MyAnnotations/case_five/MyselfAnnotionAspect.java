@@ -6,13 +6,14 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
+
 @Aspect
 @Component
 public class MyselfAnnotionAspect {
     //通过切点表达式定义切点
-    @Pointcut("execution(* com.enjoyican.demo.selfannotion.service.impl..*(..))")
+    @Pointcut("execution(* com.example.demo_2020_1211.MyAnnotations.case_five.service.impl..*(..))")
     public void myPointCut(){};
-    @Pointcut("@annotation(MyselfAnnotion)")
+    @Pointcut("@annotation(com.example.demo_2020_1211.MyAnnotations.case_three.MyselfAnnotion)")
     public void myAnnoCut(){};
 
     //定义方法增强类型（本例子采用环绕增强）
