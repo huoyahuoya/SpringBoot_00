@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.sql.*;
 
 @RestController
-@RequestMapping("/test")
 public class TestController {
 
     @RequestMapping("/test")
